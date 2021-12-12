@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaiwanTravel</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .justify-content-between {
+            justify-content: space-between;
+        }
+
+        .justify-content-center{
+            justify-content: center;
+        }
+
+        .align-items-center {
+            align-items: center;
+        }
+
+        .list-style {
+            list-style: none;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 49px;
+            padding-left: 176px;
+            color: #fff;
+        }
+
+        .menu-list {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 33px;
+            color: #fff;
+        }
+
+        .menu-list li {
+            padding: 0 40px;
+        }
+
+        .icon {
+            width: 60px;
+            height: 60px;
+        }
+
+        .like {
+            padding-right: 77px;
+        }
+
+        .p-top-60 {
+            padding-top: 60px;
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            z-index: 1;
+        }
+
+        .menu-list li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .menu-list li a:hover {
+            text-decoration: underline;
+        }
+
+        .title {
+            font-family: Noto Sans;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 100px;
+            line-height: 136px;
+            color: #fff;
+            text-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
+            text-align: center;
+        }
+        .position-center{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .section-01 {
+            position: relative;
+            overflow: hidden;
+            background: #fff;
+            /* background-image: url('./image/banner.png'); */
+            display: flex;
+            align-items: center;
+        }
+        .banner{
+            height: 598px;
+            object-fit: cover;
+        }
+        img{
+            min-width: 100%;
+            height: 100%;
+            display:block
+        }
+        .image-container{
+            width: 796px;
+            padding: 24px;
+        }
+        .input-container{
+            max-width: 796px;
+        }
+        .input-container .search-icon {
+            right: 48px;
+            bottom: 32px;
+            height: 45px;
+            position: absolute;
+        }
+        .input-container >input{
+            width: 100%;
+            height: 58px;
+            border:0px;
+            border-radius: 130px;
+            /* position: relative; */
+        }
+        .input-container> input::placeholder{
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 25px;
+            padding: 17px 28px 16px;
+        }
+        /* section 2 */
+        .container{
+            /* max-width: 996px; */
+            max-width: 1232px;
+            margin: 0 auto;
+            margin-top: 24px;
+            margin-bottom: 32px;
+        }
+        .btn{
+           border-radius: 100px;
+           margin: 0 8px;
+           text-align: center;
+           background: #FFFFFF;
+           border: 2px solid #C4C4C4;     
+           padding: 8px 45px;
+           color: #C4C4C4;
+        }
+        .btn:hover{
+            background: #FFB800;
+            color: #fff;
+        }
+        .col{
+         padding: 0 9px;
+        }
+
+        .mb-32{
+            margin-bottom: 32px;
+        }
+        .mb-34{
+            margin-bottom: 34px;
+        }
+        .card {
+            position: relative;
+            background: #C4C4C4;
+            box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.25);
+            border-radius: 20px;
+        }
+        .card-footer >h4{
+            background: #ffffff;
+            border-radius: 0 0 20px 20px;
+            padding: 13px 15px 12px 32px;
+            width: 100%;
+        }
+
+        .card i{
+            display: block;
+        }
+        .card i img{
+            width: 30px;
+            height: 30px;
+        }
+        a{
+            color: inherit;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        /* 整個卡片可以按 */
+        a::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+        .card-footer{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 0;
+            display: flex;
+            align-items: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg flex justify-content-between align-items-center p-top-60">
+        <div class="logo">GOTaiwan</div>
+        <div>
+            <ul class="flex list-style menu-list">
+                <li><a href="javascript:void(0)">好去處</a></li>
+                <li><a href="javascript:void(0)">好好玩</a></li>
+                <li><a href="javascript:void(0)">好住宿</a></li>
+                <li><a href="javascript:void(0)">好好評</a></li>
+            </ul>
+        </div>
+        <div class="icon like">
+            <img src="./image/icon/favorite.png">
+        </div>
+    </header>
+    <main>
+        <section class="section-01 justify-content-center">
+            <img src="./image/banner.png" class="banner">
+            <div class="image-container position-center">
+                <div class="title">Taipei,25°C</div>
+                <div class="input-container">
+                    <div class="search-icon">
+                        <img src="./image/icon/search.png">
+                    </div>
+                    <input type="text" placeholder="想去哪?">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="flex justify-content-center align-items-center">
+                    <h1>附近城市</h1>
+                </div>
+            </div>
+            <div class="container">
+                <div class="flex justify-content-center align-items-center">
+                    <button class="btn">台北</button>
+                    <button class="btn">新竹市</button>
+                    <button class="btn">台東</button>
+                    <button class="btn">花蓮</button>
+                    <button class="btn">高雄</button>
+                </div>
+            </div>
+            <div class="container">
+                <h1 class="mb-32">周末好去處</h1>
+                <div class="flex mb-34">
+                    <div class="col">
+                        <div class="card">
+                            <img src="./image/site.png">
+                            <div class="card-footer">
+                                <h4 class="flex align-items-center justify-content-between">
+                                    <a href="javascript:;">台北象山</a>
+                                    <i><img src="./image/icon/favorite.png" ></i>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./image/site-2.png">
+                            <div class="card-footer">
+                                <h4 class="flex align-items-center justify-content-between">
+                                    <a href="javascript:;">柴口浮潛區</a>
+                                    <i><img src="./image/icon/favorite.png" ></i>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./image/site-2.png">
+                            <div class="card-footer">
+                                <h4 class="flex align-items-center justify-content-between">
+                                    <a href="javascript:;">柴口浮潛區</a>
+                                    <i><img src="./image/icon/favorite.png" ></i>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./image/site-2.png">
+                            <div class="card-footer">
+                                <h4 class="flex align-items-center justify-content-between">
+                                    <a href="javascript:;">柴口浮潛區</a>
+                                    <i><img src="./image/icon/favorite.png" ></i>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="mb-32">週末好好吃</h1>
+                <div class="flex mb-34">
+                    <div class="col">
+                        <div class="card">
+                            <img src="./image/site.png">
+                            <div class="card-footer">
+                                <h4 class="flex align-items-center justify-content-between">
+                                    <a href="javascript:;">台北象山</a>
+                                    <i><img src="./image/icon/favorite.png" ></i>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./image/site-2.png">
+                            <div class="card-footer">
+                                <h4 class="flex align-items-center justify-content-between">
+                                    <a href="javascript:;">柴口浮潛區</a>
+                                    <i><img src="./image/icon/favorite.png" ></i>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./image/site-2.png">
+                            <div class="card-footer">
+                                <h4 class="flex align-items-center justify-content-between">
+                                    <a href="javascript:;">柴口浮潛區</a>
+                                    <i><img src="./image/icon/favorite.png" ></i>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./image/site-2.png">
+                            <div class="card-footer">
+                                <h4 class="flex align-items-center justify-content-between">
+                                    <a href="javascript:;">柴口浮潛區</a>
+                                    <i><img src="./image/icon/favorite.png" ></i>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="mb-32">好好睡民宿</h1>
+                <div class="flex mb-34">
+                    <div class="col">
+                        <div class="card">
+                            <img src="./image/site.png">
+                            <div class="card-footer">
+                                <h4 class="flex align-items-center justify-content-between">
+                                    <a href="javascript:;">台北象山</a>
+                                    <i><img src="./image/icon/favorite.png" ></i>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./image/site-2.png">
+                            <div class="card-footer">
+                                <h4 class="flex align-items-center justify-content-between">
+                                    <a href="javascript:;">柴口浮潛區</a>
+                                    <i><img src="./image/icon/favorite.png" ></i>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./image/site-2.png">
+                            <div class="card-footer">
+                                <h4 class="flex align-items-center justify-content-between">
+                                    <a href="javascript:;">柴口浮潛區</a>
+                                    <i><img src="./image/icon/favorite.png" ></i>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./image/site-2.png">
+                            <div class="card-footer">
+                                <h4 class="flex align-items-center justify-content-between">
+                                    <a href="javascript:;">柴口浮潛區</a>
+                                    <i><img src="./image/icon/favorite.png" ></i>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
