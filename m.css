@@ -3,6 +3,13 @@
   margin: 0;
   font-family: "Noto Sans SC", sans-serif;
 }
+header{
+  z-index: 1;
+}
+.navbar{
+  background: #ffb800;
+}
+
 ul {
   list-style: none;
 }
