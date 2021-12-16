@@ -20,9 +20,11 @@ header {
   padding: 0 24px;
   position: fixed;
 }
+
 header nav ul {
   list-style: none;
 }
+
 header nav ul li a {
   color: #fff;
   font-weight: 500;
@@ -30,11 +32,14 @@ header nav ul li a {
   line-height: 33px;
   text-decoration: none;
 }
+
 header nav ul li:hover {
   cursor: pointer;
   text-decoration: underline;
 }
+
 header .like-icon img {
   width: 40px;
   height: 40px;
-}/*# sourceMappingURL=mboile.css.map */
+}
+/*# sourceMappingURL=m-home.css.map */

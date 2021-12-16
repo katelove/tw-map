@@ -1,0 +1,41 @@
+// 設定變數
+$yellow:'#ffb800'
+
+*
+    padding: 0
+    margin: 0
+    font-family: "Noto Sans SC", sans-serif
+
+header
+    background: rgb(219, 217, 217)
+    z-index: 1
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 20px
+    padding: 0 24px
+    position: fixed
+    .logo
+        h1
+            font-weight: bold
+            font-size: 32px
+            line-height: 44px
+            text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25)
+            color: #fff
+    nav
+        ul
+            list-style: none
+            li
+                a
+                    color: #fff
+                    font-weight: 500
+                    font-size: 24px
+                    line-height: 33px
+                    text-decoration: none
+                &:hover
+                    cursor: pointer
+                    text-decoration: underline
+    .like-icon
+        img
+            width: 40px
+            height: 40px
