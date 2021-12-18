@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Noto Sans SC", sans-serif;
+}
+
+.food-banner {
+  background-image: url("../image/food-banner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 667px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.food-banner .display-box {
+  width: 100%;
+}
+
+.food-banner .display-box .title-word {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 61px;
+  color: #fff;
+  text-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
