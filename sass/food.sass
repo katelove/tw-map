@@ -1,3 +1,5 @@
+$phoneSize: 768px
+
 *
     padding: 0
     margin: 0
@@ -21,11 +23,49 @@
             color: #fff
             text-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25)
             text-align: center
+            @media (min-width: $phoneSize) 
+                font-size: 100px
+                line-height: 136px
 
-
-// @media (min-width: 768px) 
-// .title-word
-//     font-size: 100px
-//     line-height: 136px
-
-
+.sec2
+    display: flex
+    flex-direction: row
+    max-width: 1200px
+    margin: 0 auto
+    .ramen-banner
+        width: 594px
+        height: 473px
+        border-radius: 25px
+        overflow: hidden
+        >img 
+          width: 100%
+          height: 100%
+    .ramen-layout
+        display: flex
+        flex-direction: row
+        margin-top: 32px -8px 0
+        .ramen-pic
+            width: 188px
+            height: 143px
+            border-radius: 25px
+            overflow: hidden
+            margin: 0 8px
+            >img
+                width: 100%
+                height: 100%
+    .sec2-right
+        .site-word
+            display: flex
+            justify-content: flex-start
+            >img
+                width: 16px
+                height: 20.5px
+                margin-right: 10px
+        .date-word
+            display: flex
+            justify-content: flex-start
+            >img
+                width: 21px
+                height: 19px
+                margin-right: 10px
+ 
