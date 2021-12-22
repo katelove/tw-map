@@ -49,13 +49,36 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .sec2 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-width: 716px;
+  }
+}
+
+@media (min-width: 992px) {
+  .sec2 {
+    max-width: 940px;
+  }
+}
+
+@media (min-width: 1148px) {
+  .sec2 {
+    max-width: 1148px;
+  }
 }
 
 .sec2 .ramen-banner {
@@ -128,4 +151,10 @@
   width: 21px;
   height: 19px;
   margin-right: 10px;
+}
+
+.sec2 .sec2-right .content {
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  overflow: hidden;
 }

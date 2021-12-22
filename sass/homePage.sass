@@ -1,0 +1,109 @@
+$phone-size: 768px
+$pad-size: 992px
+    
+*
+    padding: 0
+    margin: 0
+    font-family: "Noto Sans SC", sans-serif
+
+.navbar
+    background: #ffb800
+
+header
+    z-index: 1
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 20px 24px 0
+    position: fixed
+    left: 0
+    right: 0
+    .logo
+        >h1
+            font-weight: bold
+            font-size: 32px
+            line-height: 44px
+            text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25)
+            color: #fff
+    .hide
+        display: none
+        @media (min-width: $phone-size)
+            display: block
+        .menu
+            display: flex
+            list-style: none
+            li 
+                padding: 0 20px
+                @media (min-width: $pad-size)
+                    padding: 0 40px
+                >a
+                    text-decoration: none
+                    color: #fff
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 33px;
+                &:hover
+                    cursor: pointer;
+                    text-decoration: underline;
+    .like
+        >img
+            width: 40px
+            height: 40px
+
+.banner
+    background-image: url("../image/banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 667px;
+
+.box-center
+    display: flex
+    justify-content: center
+    align-items: center
+    .display-box
+        width: 100%
+        .display-text
+            text-align: center;
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 49px;
+            color: #fff;
+            text-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
+            margin-bottom: 17px;
+            @media (min-width: $phone-size)
+                font-size: 100px;
+                line-height: 136px;
+    .search-box
+        padding: 0 36px;
+        box-sizing: border-box;
+        text-align: center;
+        .input-box
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            >input
+                background: #ffffff;
+                box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+                border-radius: 130px;
+                border: 0;
+                height: 50px;
+                width: 100%;
+                padding-left: 27px;
+                max-width: 800px;
+                box-sizing: border-box;
+            &::placeholder
+                font-size: 18px;
+                line-height: 25px;
+                color: #7e7e7e;
+            .icon-position
+                position: absolute
+                top: 50%;
+                right: 12px;
+                transform: translateY(-50%);
+                >i
+                    font-size: 24px;
+                    color: #ffb800;
+
+    
+
